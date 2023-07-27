@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kajer Dokan | Profile</title>
+    <link rel="stylesheet" href="/vendor/css/style.css">
+    <link rel="stylesheet" href="/vendor/css/dashboard.css">
+</head>
+
+<body>
+    <!-- worker dashboard -->
+    <section id="dashboard">
+        <div class="container">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <div class="top">
+                    <img src="/vendor/media/logo.svg" alt="" class="logo">
+
+                    <div class="menu">
+                        <a class="item" href="/worker/dashboard.html">
+                            <div class="icon">
+                                <iconify-icon icon="iconamoon:home-fill"></iconify-icon>
+                            </div>
+                            <p>dashboard</p>
+                        </a>
+                        <a class="item" href="/worker/resume.html">
+                            <div class="icon">
+                                <iconify-icon icon="mdi:resume"></iconify-icon>
+                            </div>
+                            <p>resume</p>
+                        </a>
+                        <a class="item" href="/worker/available-jobs.html">
+                            <div class="icon">
+                                <iconify-icon icon="fa6-solid:list-ul"></iconify-icon>
+                            </div>
+                            <p>available jobs</p>
+                        </a>
+                        <a class="item" href="/worker/jobs.html">
+                            <div class="icon">
+                                <iconify-icon icon="zondicons:travel-case"></iconify-icon>
+                            </div>
+                            <p>your jobs</p>
+                        </a>
+                        <a class="item" href="/worker/completed-jobs.html">
+                            <div class="icon">
+                                <iconify-icon icon="zondicons:travel-case"></iconify-icon>
+                            </div>
+                            <p>completed jobs</p>
+                        </a>
+                        <a class="item" href="/worker/transactions.html">
+                            <div class="icon">
+                                <iconify-icon icon="ph:arrows-left-right-bold"></iconify-icon>
+                            </div>
+                            <p>transactions</p>
+                        </a>
+                    </div>
+                </div>
+
+                <a class="item" href="javascript:void()">
+                    <div class="icon">
+                        <iconify-icon icon="majesticons:logout"></iconify-icon>
+                    </div>
+                    <p>logout</p>
+                </a>
+            </aside>
+
+            <!-- main section -->
+            <main id="cProfile">
+                <!-- topbar -->
+                <section class="topbar">
+                    <h1>profile</h1>
+
+                    <a class="user" href="/worker/profile.html">
+                        <img src="/vendor/media/user.jpg" alt="">
+                        <p>worker name</p>
+                    </a>
+                </section>
+
+                <!-- main content -->
+                <section class="main">
+                    <div class="row">
+                        <!-- personal information -->
+                        <div class="card">
+                            <div class="card_heading">
+                                <div class="icon">
+                                    <iconify-icon icon="mingcute:user-info-fill"></iconify-icon>
+                                </div>
+                                <p>personal information</p>
+                            </div>
+                            <div class="card_body">
+                                <form class="personal_info" action="javascript:void()" method="post">
+                                    <div class="input">
+                                        <label for="name">name</label>
+                                        <input type="text" name="name" id="name" value="Jimmy Polo" disabled>
+                                    </div>
+                                    <div class="input">
+                                        <label for="email">email</label>
+                                        <input type="email" name="email" id="email" value="jimmypolo@mail.com" disabled>
+                                    </div>
+                                    <div class="input">
+                                        <label for="role">user role</label>
+                                        <input type="text" name="role" id="role" value="Worker" disabled>
+                                    </div>
+                                    <div class="input">
+                                        <label for="role">service type</label>
+                                        <input type="text" name="role" id="role" value="Auto Care" disabled>
+                                    </div>
+                                    <div class="input">
+                                        <label for="phone">phone</label>
+                                        <input type="tel" name="phone" id="phone" value="+8801400492967" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="add">address</label>
+                                        <input type="text" name="add" id="add"
+                                            value="876 Askarabad, Dewanhat, Chattogram-4000" required>
+                                    </div>
+                                    <div class="input">
+                                        <label for="photo">photo</label>
+                                        <div class="input_img">
+                                            <img src="/vendor/media/user.jpg" alt="" class="user_image" id="image">
+                                            <label for="uploadImage" class="upload_img">Upload your photo</label>
+                                            <input type="file" name="image" id="uploadImage" accept="image/*">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="buttons">
+                                        <button type="reset" class="button reset">Cancel</button>
+                                        <button type="submit" class="button submit">Save Changes</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- change password -->
+                        <div class="card">
+                            <div class="card_heading">
+                                <div class="icon">
+                                    <iconify-icon icon="solar:lock-password-bold"></iconify-icon>
+                                </div>
+                                <p>change password</p>
+                            </div>
+                            <div class="card_body">
+                                <form class="change_pass" action="javascript:void()" method="post">
+                                    <div class="input">
+                                        <label for="old_pass">Old Password</label>
+                                        <input type="password" name="old_pass" id="oldPass">
+                                    </div>
+                                    <div class="input">
+                                        <label for="new_pass">New Password</label>
+                                        <input type="password" name="new_pass" id="newPass">
+                                    </div>
+                                    <hr>
+                                    <div class="buttons">
+                                        <button type="submit" class="button submit">Save Changes</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>

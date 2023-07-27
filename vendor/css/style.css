@@ -81,6 +81,8 @@ html {
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  cursor: pointer;
+  transition: ease 0.3s;
 }
 .button:hover {
   gap: 1rem;
@@ -90,6 +92,80 @@ html {
 }
 .button:hover ion-icon {
   transform: rotate(360deg);
+}
+.buttons .reset {
+  background-color: transparent;
+  color: var(--clr4);
+  border: var(--border);
+  border-width: 0.15rem;
+  border-color: var(--clr4);
+}
+.buttons .submit {
+  background-color: var(--clr2);
+  border: var(--border);
+  border-width: 0.2rem;
+  border-color: var(--clr2);
+}
+
+form hr {
+  width: 15rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  opacity: 0.4;
+}
+form .input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+form label {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+form input,
+form select,
+form textarea {
+  background-color: var(--clr1);
+  outline: none;
+  border: var(--border);
+  border-width: 0.2rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+form textarea {
+  height: 10rem;
+  resize: vertical;
+}
+form .user_image {
+  width: 5rem;
+  height: 5rem;
+  border: var(--border);
+  border-width: 0.2rem;
+  border-radius: 0.3rem;
+}
+form .input_img {
+  display: flex;
+  gap: 1rem;
+}
+form .upload_img {
+  background-color: var(--clr1);
+  width: 100%;
+  border: var(--border);
+  border-width: 0.2rem;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+form #uploadImage {
+  display: none;
+}
+form .buttons {
+  justify-content: center;
 }
 
 .theme_clr {
@@ -104,6 +180,22 @@ html {
   --clr4: #2d2727;
   --clr5: #e0c8ff;
   --border: #2d272710 0.3rem solid;
+}
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+/* Track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* Handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+  border: solid 0.5rem var(--clr4);
+  border-radius: 0.5rem;
 }
 
 .sec_divider {
@@ -918,3 +1010,108 @@ html {
   top: 195rem;
 }
 /* HOME PAGE ENDS */
+
+/* hero section */
+@media only screen and (max-width: 768px) {
+  #hero .img1,
+  #hero .img2,
+  #hero .img3 {
+    max-width: 16rem;
+  }
+}
+@media only screen and (max-width: 625px) {
+  #hero header .menu,
+  #hero header .action_btn {
+    display: none;
+  }
+  #hero header .mobile-nav {
+    display: block;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #hero .left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  #hero .img1,
+  #hero .img2,
+  #hero .img3 {
+    position: initial;
+  }
+  #hero .main {
+    flex-direction: column;
+  }
+  #hero .main .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #hero .buttons {
+    justify-content: center;
+  }
+  #hero h1 {
+    text-align: center;
+  }
+  #hero .right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #hero .img3 {
+    display: none;
+  }
+}
+@media only screen and (max-height: 667px) {
+  #hero .main {
+    height: 620px;
+  }
+}
+@media only screen and (max-height: 568px) {
+  #hero .main {
+    height: 520px;
+  }
+}
+
+/* choose section */
+@media only screen and (max-width: 900px) {
+  #choose .container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+/* statics section */
+@media only screen and (max-width: 650px) {
+  #statics .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  #statics .heading {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  #statics .col:nth-child(2),
+  #statics .col:nth-child(3) {
+    max-width: inherit;
+    height: inherit;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #statics .box {
+    width: 12rem;
+    height: 5rem;
+  }
+}
+
+/* footer section */
+@media only screen and (max-width: 580px) {
+  #footer .container:first-child {
+    flex-direction: column;
+  }
+  #footer .footer_logo {
+    display: none;
+  }
+  #footer hr {
+    width: 5rem;
+  }
+}

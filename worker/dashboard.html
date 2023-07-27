@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kajer Dokan | Dashboard</title>
+    <link rel="stylesheet" href="/vendor/css/style.css">
+    <link rel="stylesheet" href="/vendor/css/dashboard.css">
+</head>
+
+<body>
+    <!-- worker dashboard -->
+    <section id="dashboard">
+        <div class="container">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <div class="top">
+                    <img src="/vendor/media/logo.svg" alt="" class="logo">
+
+                    <div class="menu">
+                        <a class="item" href="/worker/dashboard.html">
+                            <div class="icon">
+                                <iconify-icon icon="iconamoon:home-fill"></iconify-icon>
+                            </div>
+                            <p>dashboard</p>
+                        </a>
+                        <a class="item" href="/worker/resume.html">
+                            <div class="icon">
+                                <iconify-icon icon="mdi:resume"></iconify-icon>
+                            </div>
+                            <p>resume</p>
+                        </a>
+                        <a class="item" href="/worker/available-jobs.html">
+                            <div class="icon">
+                                <iconify-icon icon="fa6-solid:list-ul"></iconify-icon>
+                            </div>
+                            <p>available jobs</p>
+                        </a>
+                        <a class="item" href="/worker/jobs.html">
+                            <div class="icon">
+                                <iconify-icon icon="zondicons:travel-case"></iconify-icon>
+                            </div>
+                            <p>your jobs</p>
+                        </a>
+                        <a class="item" href="/worker/completed-jobs.html">
+                            <div class="icon">
+                                <iconify-icon icon="zondicons:travel-case"></iconify-icon>
+                            </div>
+                            <p>completed jobs</p>
+                        </a>
+                        <a class="item" href="/worker/transactions.html">
+                            <div class="icon">
+                                <iconify-icon icon="ph:arrows-left-right-bold"></iconify-icon>
+                            </div>
+                            <p>transactions</p>
+                        </a>
+                    </div>
+                </div>
+
+                <a class="item" href="javascript:void()">
+                    <div class="icon">
+                        <iconify-icon icon="majesticons:logout"></iconify-icon>
+                    </div>
+                    <p>logout</p>
+                </a>
+            </aside>
+
+            <!-- main section -->
+            <main id="wDash">
+                <!-- topbar -->
+                <section class="topbar">
+                    <h1>dashboard</h1>
+
+                    <a class="user" href="/worker/profile.html">
+                        <img src="/vendor/media/user.jpg" alt="">
+                        <p>worker name</p>
+                    </a>
+                </section>
+
+                <!-- main content -->
+                <section class="main">
+                    <div class="row">
+                        <!-- featured jobs -->
+                        <div class="card">
+                            <div class="card_heading">
+                                <div class="icon">
+                                    <iconify-icon icon="uim:favorite"></iconify-icon>
+                                </div>
+                                <p>featured jobs</p>
+                            </div>
+                            <div class="card_body">
+                                <a class="job" href="javascript:void()">
+                                    <p class="title">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <p class="service">plumber</p>
+                                </a>
+                                <a class="job" href="javascript:void()">
+                                    <p class="title">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <p class="service">plumber</p>
+                                </a>
+                                <a class="job" href="javascript:void()">
+                                    <p class="title">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <p class="service">plumber</p>
+                                </a>
+                                <a class="job" href="javascript:void()">
+                                    <p class="title">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <p class="service">plumber</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- your jobs -->
+                        <div class="card">
+                            <div class="card_heading">
+                                <div class="icon">
+                                    <iconify-icon icon="zondicons:travel-case"></iconify-icon>
+                                </div>
+                                <p>your jobs</p>
+                            </div>
+                            <div class="card_body">
+                                <a class="job" href="javascript:void()">
+                                    <p class="title">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <p class="service">plumber</p>
+                                </a>
+                                <a class="job" href="javascript:void()">
+                                    <p class="title">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <p class="service">plumber</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- recent transactions -->
+                        <div class="card">
+                            <div class="card_heading">
+                                <div class="icon">
+                                    <iconify-icon icon="ph:arrows-left-right-bold"></iconify-icon>
+                                </div>
+                                <p>recent transactions</p>
+                            </div>
+                            <div class="card_body">
+                                <table class="transaction">
+                                    <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Date</th>
+                                            <th>Amount</th>
+                                            <th>Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#001</td>
+                                            <td>15 Jun, 2023</td>
+                                            <td>৳ 1500</td>
+                                            <td>
+                                                <a href="javascript:void()">
+                                                    <iconify-icon
+                                                        icon="icon-park-solid:transaction-order"></iconify-icon>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#001</td>
+                                            <td>15 Jun, 2023</td>
+                                            <td>৳ 1500</td>
+                                            <td>
+                                                <a href="javascript:void()">
+                                                    <iconify-icon
+                                                        icon="icon-park-solid:transaction-order"></iconify-icon>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#001</td>
+                                            <td>15 Jun, 2023</td>
+                                            <td>৳ 1500</td>
+                                            <td>
+                                                <a href="javascript:void()">
+                                                    <iconify-icon
+                                                        icon="icon-park-solid:transaction-order"></iconify-icon>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#001</td>
+                                            <td>15 Jun, 2023</td>
+                                            <td>৳ 1500</td>
+                                            <td>
+                                                <a href="javascript:void()">
+                                                    <iconify-icon
+                                                        icon="icon-park-solid:transaction-order"></iconify-icon>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#001</td>
+                                            <td>15 Jun, 2023</td>
+                                            <td>৳ 1500</td>
+                                            <td>
+                                                <a href="javascript:void()">
+                                                    <iconify-icon
+                                                        icon="icon-park-solid:transaction-order"></iconify-icon>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#001</td>
+                                            <td>15 Jun, 2023</td>
+                                            <td>৳ 1500</td>
+                                            <td>
+                                                <a href="javascript:void()">
+                                                    <iconify-icon
+                                                        icon="icon-park-solid:transaction-order"></iconify-icon>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#001</td>
+                                            <td>15 Jun, 2023</td>
+                                            <td>৳ 1500</td>
+                                            <td>
+                                                <a href="javascript:void()">
+                                                    <iconify-icon
+                                                        icon="icon-park-solid:transaction-order"></iconify-icon>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#001</td>
+                                            <td>15 Jun, 2023</td>
+                                            <td>৳ 1500</td>
+                                            <td>
+                                                <a href="javascript:void()">
+                                                    <iconify-icon
+                                                        icon="icon-park-solid:transaction-order"></iconify-icon>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#001</td>
+                                            <td>15 Jun, 2023</td>
+                                            <td>৳ 1500</td>
+                                            <td>
+                                                <a href="javascript:void()">
+                                                    <iconify-icon
+                                                        icon="icon-park-solid:transaction-order"></iconify-icon>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#001</td>
+                                            <td>15 Jun, 2023</td>
+                                            <td>৳ 1500</td>
+                                            <td>
+                                                <a href="javascript:void()">
+                                                    <iconify-icon
+                                                        icon="icon-park-solid:transaction-order"></iconify-icon>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
