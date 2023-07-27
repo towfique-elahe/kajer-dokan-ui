@@ -911,6 +911,7 @@ form .buttons {
 }
 .modal .input {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 0.5rem;
   background-color: white;
