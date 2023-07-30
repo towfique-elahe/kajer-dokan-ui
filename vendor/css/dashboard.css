@@ -24,6 +24,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
+  overflow-y: scroll;
 }
 #dashboard .sidebar .top {
   width: 100%;
