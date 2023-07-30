@@ -16,21 +16,21 @@
             <div class="left">
                 <img src="/vendor/media/logo.svg" alt="" class="logo">
                 <ul class="menu">
-                    <li><a href="javascript:void()">Home</a></li>
-                    <li><a href="javascript:void()">About</a></li>
-                    <li><a href="javascript:void()">Contact</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
                 </ul>
             </div>
-            <a href="javascript:void()" class="action_btn" onclick="login()">
+            <a href="/login.html" class="action_btn">
                 <ion-icon name="person"></ion-icon> Login
             </a>
             <div class="dropdown mobile-nav none">
                 <ion-icon name="menu" onclick="dropDown()" class="menu-button"></ion-icon>
                 <div id="menuContent" class="menu-content">
-                    <a href="javascript:void()">Home</a>
-                    <a href="javascript:void()">About</a>
-                    <a href="javascript:void()">Contact</a>
-                    <a href="javascript:void()" onclick="login()">Login</a>
+                    <a href="/index.html">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/contact.html">Contact</a>
+                    <a href="/login.html">Login</a>
                 </div>
             </div>
         </header>
@@ -44,7 +44,7 @@
                         <ion-icon name="call"></ion-icon> Call Now
                     </a>
                     <a href="javascript:void()" class="action_btn">
-                        <ion-icon name="people"></ion-icon> Hire Now
+                        <iconify-icon icon="mdi:register"></iconify-icon> Register Now
                     </a>
                 </div>
             </div>
@@ -473,100 +473,6 @@
             </div>
         </div>
     </footer>
-
-
-    <!-- login modal -->
-    <div id="login" class="m-container">
-        <div class="modal">
-            <div class="head">
-                <a href="javascript:void()" onclick="register()">
-                    Register
-                </a>
-                <a href="javascript:void()" onclick="loginClose()">
-                    <iconify-icon icon="carbon:close-filled"></iconify-icon>
-                </a>
-            </div>
-            <div class="body">
-                <h3 class="heading">Login</h3>
-                <hr>
-                <form action="" method="post">
-                    <div class="input">
-                        <iconify-icon icon="solar:user-id-bold"></iconify-icon>
-                        <select name="role" id="role" required>
-                            <option value="client">Client</option>
-                            <option value="worker">Worker</option>
-                            <option value="admin">Administrator</option>
-                        </select>
-                    </div>
-                    <div class="input">
-                        <iconify-icon icon="tabler:mail-filled"></iconify-icon>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
-                    </div>
-                    <div class="input">
-                        <iconify-icon icon="bxs:lock"></iconify-icon>
-                        <input type="password" name="password" id="password" placeholder="Password" required>
-                    </div>
-                    <button type="submit">
-                        Login <iconify-icon icon="maki:arrow"></iconify-icon>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- register modal -->
-    <div id="register" class="m-container">
-        <div class="modal">
-            <div class="head">
-                <a href="javascript:void()" onclick="login()">
-                    login
-                </a>
-                <a href="javascript:void()" onclick="registerClose()">
-                    <iconify-icon icon="carbon:close-filled"></iconify-icon>
-                </a>
-            </div>
-            <div class="body">
-                <h3 class="heading">Register</h3>
-                <hr>
-                <form action="" method="post">
-                    <div class="input">
-                        <iconify-icon icon="solar:user-bold"></iconify-icon>
-                        <input type="text" name="name" id="name" placeholder="Name" required>
-                    </div>
-                    <div class="input">
-                        <iconify-icon icon="solar:user-id-bold"></iconify-icon>
-                        <select name="role" id="role" required>
-                            <option value="client">Client</option>
-                            <option value="worker">Worker</option>
-                        </select>
-                    </div>
-                    <div class="input">
-                        <iconify-icon icon="ic:round-phone"></iconify-icon>
-                        <input type="tel" name="phone" id="phone" placeholder="phone">
-                    </div>
-                    <div class="input">
-                        <iconify-icon icon="tabler:mail-filled"></iconify-icon>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
-                    </div>
-                    <div class="input">
-                        <iconify-icon icon="bxs:lock"></iconify-icon>
-                        <input type="password" name="password" id="password" placeholder="Password" required>
-                    </div>
-                    <div class="policy">
-                        <input type="checkbox" name="policy" id="policy" required>
-                        <p>
-                            I’ve read and agree with your Privacy Policy and Terms & Conditions
-                        </p>
-                    </div>
-                    <button type="submit">
-                        Submit <iconify-icon icon="maki:arrow"></iconify-icon>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-
 
     <!-- bg circles -->
     <div class="bg bg1"></div>

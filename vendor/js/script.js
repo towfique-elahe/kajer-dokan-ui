@@ -16,20 +16,3 @@ window.onclick = function (event) {
     }
 }
 // dropdown button ends
-
-
-// login modal
-function login(){
-    document.getElementById('login').style.display='flex';
-    document.getElementById('register').style.display='none';
-}
-function register(){
-    document.getElementById('register').style.display='flex';
-    document.getElementById('login').style.display='none';
-}
-function loginClose(){
-    document.getElementById('login').style.display='none';
-}
-function registerClose(){
-    document.getElementById('register').style.display='none';
-}

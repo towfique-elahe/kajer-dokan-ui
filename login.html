@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kajer Dokan | Login</title>
+    <link rel="stylesheet" href="/vendor/css/style.css">
+</head>
+
+<body>
+    <!-- hero section -->
+    <section id="auth">
+        <!-- header -->
+        <header class="container-fluid">
+            <div class="left">
+                <img src="/vendor/media/logo.svg" alt="" class="logo">
+                <ul class="menu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <a href="/login.html" class="action_btn">
+                <ion-icon name="person"></ion-icon> Login
+            </a>
+            <div class="dropdown mobile-nav none">
+                <ion-icon name="menu" onclick="dropDown()" class="menu-button"></ion-icon>
+                <div id="menuContent" class="menu-content">
+                    <a href="/index.html">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/contact.html">Contact</a>
+                    <a href="/login.html">Login</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- hero main -->
+        <div class="container">
+            <div class="col">
+                <form action="javascript:void()" method="post">
+                    <h1 class="heading">Login</h1>
+                    <hr>
+                    <div class="inputs">
+                        <div class="input">
+                            <label for="role">Role</label>
+                            <select name="role" id="role" required>
+                                <option value="client">Client</option>
+                                <option value="worker">Worker</option>
+                                <option value="admin">Administrator</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Type your email" required>
+                        </div>
+                        <div class="input">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Type your password"
+                                required>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="link">
+                        Dont have an account? <a href="/register.html">Register Now</a>
+                    </p>
+                    <button type="submit" class="button">
+                        Login <iconify-icon icon="maki:arrow"></iconify-icon>
+                    </button>
+                </form>
+            </div>
+            <div class="col">
+                <img src="/vendor/media/car_service.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script src="/vendor/js/script.js"></script>
+
+    <!-- ionicon installation -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- iconify installation -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
