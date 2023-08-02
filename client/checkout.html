@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kajer Dokan | Track</title>
+    <title>Kajer Dokan | Checkout</title>
     <link rel="stylesheet" href="/vendor/css/style.css">
     <link rel="stylesheet" href="/vendor/css/dashboard.css">
 </head>
 
 <body>
-    <!-- client dashboard -->
+    <!-- worker dashboard -->
     <section id="dashboard">
         <div class="container">
             <!-- sidebar -->
@@ -73,10 +73,10 @@
             </aside>
 
             <!-- main section -->
-            <main id="cTrack">
+            <main id="checkout">
                 <!-- topbar -->
                 <section class="topbar">
-                    <h1>track process</h1>
+                    <h1>checkout</h1>
 
                     <a class="user" href="/client/profile.html">
                         <img src="/vendor/media/user.jpg" alt="">
@@ -84,55 +84,45 @@
                     </a>
                 </section>
 
+                <!-- main content -->
                 <section class="main">
-                    <div class="row">
-                        <div class="card steps">
-                            <div class="step">
-                                <div class="icon">
-                                    <iconify-icon icon="mingcute:check-2-fill"></iconify-icon>
+                    <div class="card">
+                        <h3 class="heading">you have selected <span class="theme_clr">Cleaning</span> service</h3>
+                        <p class="pay">
+                            Kindly pay <span class="theme_clr">৳ 1500</span>
+                        </p>
+                    </div>
+
+                    <form class="card checkout" action="javascript:void()" method="post">
+                        <div class="row">
+                            <div class="col">
+                                <div class="input">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name">
                                 </div>
-                                <h4>You hired <span class="theme_clr">Jimmy Polo</span></h4>
+                                <div class="input">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
                             </div>
-                            <iconify-icon class="arrow" icon="icon-park-outline:arrow-up"
-                                flip="vertical"></iconify-icon>
-                            <div class="step">
-                                <div class="icon">
-                                    <iconify-icon icon="material-symbols:directions-walk-rounded"></iconify-icon>
+                            <div class="col">
+                                <div class="input">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" name="phone" id="phone">
                                 </div>
-                                <h4><span class="theme_clr">Jimmy Polo</span> is on your way</h4>
-                            </div>
-                            <iconify-icon class="arrow" icon="icon-park-outline:arrow-up"
-                                flip="vertical"></iconify-icon>
-                            <div class="step">
-                                <div class="icon">
-                                    <iconify-icon icon="mdi:location"></iconify-icon>
+                                <div class="input">
+                                    <label for="billing_address">Billing Address</label>
+                                    <input type="text" name="billing_address" id="billing_address">
                                 </div>
-                                <h4><span class="theme_clr">Jimmy Polo</span> reached your location</h4>
-                            </div>
-                            <iconify-icon class="arrow" icon="icon-park-outline:arrow-up"
-                                flip="vertical"></iconify-icon>
-                            <div class="step">
-                                <div class="icon">
-                                    <iconify-icon icon="fluent-mdl2:completed-solid"></iconify-icon>
-                                </div>
-                                <h4><span class="theme_clr">Jimmy Polo</span> completed your job</h4>
                             </div>
                         </div>
-
-                        <form class="card confirmation" action="javascript:void()" method="post">
-                            <p>
-                                Kindly confirm that <span class="theme_clr">Jimmy Polo</span> completed your job.
-                            </p>
-                            <hr>
-                            <div class="input">
-                                <label for="rating">Rate <span class="theme_clr">Jimmy Polo</span></label>
-                                <input type="range" name="rating" id="rating" min="1" max="5" required>
-                            </div>
-                            <button class="button" type="submit">
-                                <iconify-icon icon="ph:seal-check-fill"></iconify-icon> Confirm
-                            </button>
-                        </form>
-                    </div>
+                        <hr>
+                        <div class="buttons">
+                            <button class="button" type="reset">Cancel</button>
+                            <button class="button submit" type="submit">Pay ৳
+                                1500</button>
+                        </div>
+                    </form>
                 </section>
             </main>
         </div>
@@ -141,6 +131,7 @@
 
     <!-- iconify -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
 </body>
 
 </html>
