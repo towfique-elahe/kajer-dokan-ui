@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kajer Dokan | Client Profile</title>
+    <link rel="stylesheet" href="/vendor/css/style.css">
+    <link rel="stylesheet" href="/vendor/css/dashboard.css">
+</head>
+
+<body>
+    <!-- worker dashboard -->
+    <section id="dashboard">
+        <div class="container">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <div class="top">
+                    <img src="/vendor/media/logo.svg" alt="" class="logo">
+
+                    <div class="menu">
+                        <a class="item" href="/admin/dashboard.html">
+                            <div class="icon">
+                                <iconify-icon icon="iconamoon:home-fill"></iconify-icon>
+                            </div>
+                            <p>dashboard</p>
+                        </a>
+                        <a class="item" href="/admin/clients.html">
+                            <div class="icon">
+                                <iconify-icon icon="mdi:users"></iconify-icon>
+                            </div>
+                            <p>clients</p>
+                        </a>
+                        <a class="item" href="/admin/workers.html">
+                            <div class="icon">
+                                <iconify-icon icon="fa6-solid:users-gear"></iconify-icon>
+                            </div>
+                            <p>workers</p>
+                        </a>
+                        <a class="item" href="/admin/transactions.html">
+                            <div class="icon">
+                                <iconify-icon icon="ph:arrows-left-right-bold"></iconify-icon>
+                            </div>
+                            <p>transactions</p>
+                        </a>
+                    </div>
+                </div>
+
+                <a class="item" href="javascript:void()">
+                    <div class="icon">
+                        <iconify-icon icon="majesticons:logout"></iconify-icon>
+                    </div>
+                    <p>logout</p>
+                </a>
+            </aside>
+
+            <!-- main section -->
+            <main id="resume">
+                <!-- topbar -->
+                <section class="topbar">
+                    <h1>worker profile</h1>
+
+                    <a class="user" href="/admin/profile.html">
+                        <img src="/vendor/media/user.jpg" alt="">
+                        <p>Kajer Dokan Admin</p>
+                    </a>
+                </section>
+
+                <!-- main content -->
+                <section class="main">
+                    <div class="buttons">
+                        <a href="/admin/edit-client.html" class="button submit"><iconify-icon
+                                icon="iconamoon:edit-fill"></iconify-icon>Edit</a>
+                        <a href="javascript:void()" class="button negative"><iconify-icon
+                                icon="material-symbols:delete"></iconify-icon>Delete Account</a>
+                    </div>
+
+                    <div class="card aWorker">
+                        <div class="head">
+                            <img src="/vendor/media/user.jpg" alt="">
+                            <h2 class="name">jimmy polo</h2>
+                        </div>
+                        <div class="body">
+                            <h3 class="r_heading">
+                                details
+                            </h3>
+                            <div class="textarea personal">
+                                <dl>
+                                    <dt>name: </dt>
+                                    <dd>Jimmy Polo</dd>
+                                </dl>
+                                <dl>
+                                    <dt>email: </dt>
+                                    <dd>jimmypolo@email.com</dd>
+                                </dl>
+                                <dl>
+                                    <dt>phone: </dt>
+                                    <dd>01400492967</dd>
+                                </dl>
+                                <dl>
+                                    <dt>address: </dt>
+                                    <dd>Bundle Road, Patharghata, Chattogram - 4000</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+</body>
+
+</html>

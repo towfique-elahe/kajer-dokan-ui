@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kajer Dokan | Profile</title>
+    <title>Kajer Dokan | Edit Client</title>
     <link rel="stylesheet" href="/vendor/css/style.css">
     <link rel="stylesheet" href="/vendor/css/dashboard.css">
 </head>
@@ -19,37 +19,25 @@
                     <img src="/vendor/media/logo.svg" alt="" class="logo">
 
                     <div class="menu">
-                        <a class="item" href="/worker/dashboard.html">
+                        <a class="item" href="/admin/dashboard.html">
                             <div class="icon">
                                 <iconify-icon icon="iconamoon:home-fill"></iconify-icon>
                             </div>
                             <p>dashboard</p>
                         </a>
-                        <a class="item" href="/worker/resume.html">
+                        <a class="item" href="/admin/clients.html">
                             <div class="icon">
-                                <iconify-icon icon="mdi:resume"></iconify-icon>
+                                <iconify-icon icon="mdi:users"></iconify-icon>
                             </div>
-                            <p>resume</p>
+                            <p>clients</p>
                         </a>
-                        <a class="item" href="/worker/available-jobs.html">
+                        <a class="item" href="/admin/workers.html">
                             <div class="icon">
-                                <iconify-icon icon="mdi:work"></iconify-icon>
+                                <iconify-icon icon="fa6-solid:users-gear"></iconify-icon>
                             </div>
-                            <p>available jobs</p>
+                            <p>workers</p>
                         </a>
-                        <a class="item" href="/worker/your-job.html">
-                            <div class="icon">
-                                <iconify-icon icon="material-symbols:work-alert-rounded"></iconify-icon>
-                            </div>
-                            <p>your job</p>
-                        </a>
-                        <a class="item" href="/worker/completed-jobs.html">
-                            <div class="icon">
-                                <iconify-icon icon="fluent-mdl2:completed-solid"></iconify-icon>
-                            </div>
-                            <p>completed jobs</p>
-                        </a>
-                        <a class="item" href="/worker/transactions.html">
+                        <a class="item" href="/admin/transactions.html">
                             <div class="icon">
                                 <iconify-icon icon="ph:arrows-left-right-bold"></iconify-icon>
                             </div>
@@ -70,11 +58,11 @@
             <main id="cProfile">
                 <!-- topbar -->
                 <section class="topbar">
-                    <h1>profile</h1>
+                    <h1>edit client</h1>
 
-                    <a class="user" href="/worker/profile.html">
+                    <a class="user" href="/admin/profile.html">
                         <img src="/vendor/media/user.jpg" alt="">
-                        <p>worker name</p>
+                        <p>Kajer Dokan Admin</p>
                     </a>
                 </section>
 
@@ -87,25 +75,24 @@
                                 <div class="icon">
                                     <iconify-icon icon="mingcute:user-info-fill"></iconify-icon>
                                 </div>
-                                <p>personal information</p>
+                                <p>client information</p>
                             </div>
                             <div class="card_body">
-                                <form class="personal_info" action="javascript:void()" method="post">
+                                <form class="personal_info">
                                     <div class="input">
                                         <label for="name">name</label>
-                                        <input type="text" name="name" id="name" value="Jimmy Polo" disabled>
+                                        <input type="text" name="name" id="name" value="Jimmy Polo" required>
                                     </div>
                                     <div class="input">
                                         <label for="email">email</label>
-                                        <input type="email" name="email" id="email" value="jimmypolo@mail.com" disabled>
+                                        <input type="email" name="email" id="email" value="jimmypolo@mail.com" required>
                                     </div>
                                     <div class="input">
                                         <label for="role">user role</label>
-                                        <input type="text" name="role" id="role" value="Worker" disabled>
-                                    </div>
-                                    <div class="input">
-                                        <label for="role">service type</label>
-                                        <input type="text" name="role" id="role" value="Auto Care" disabled>
+                                        <select name="role" id="role" required>
+                                            <option value="client">Client</option>
+                                            <option value="worker">Worker</option>
+                                        </select>
                                     </div>
                                     <div class="input">
                                         <label for="phone">phone</label>
@@ -145,11 +132,11 @@
                                 <form class="change_pass" action="javascript:void()" method="post">
                                     <div class="input">
                                         <label for="old_pass">Old Password</label>
-                                        <input type="password" name="old_pass" id="oldPass">
+                                        <input type="password" name="old_pass" id="oldPass" required>
                                     </div>
                                     <div class="input">
                                         <label for="new_pass">New Password</label>
-                                        <input type="password" name="new_pass" id="newPass">
+                                        <input type="password" name="new_pass" id="newPass" required>
                                     </div>
                                     <hr>
                                     <div class="buttons">

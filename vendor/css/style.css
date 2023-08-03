@@ -93,14 +93,17 @@ html {
 .button:hover ion-icon {
   transform: rotate(360deg);
 }
-.buttons .reset {
+.negative {
+  background-color: crimson;
+}
+.reset {
   background-color: transparent;
   color: var(--clr4);
   border: var(--border);
   border-width: 0.15rem;
   border-color: var(--clr4);
 }
-.buttons .submit {
+.submit {
   background-color: var(--clr2);
   border: var(--border);
   border-width: 0.2rem;

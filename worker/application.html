@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kajer Dokan | Jobs List</title>
+    <title>Kajer Dokan | Application</title>
     <link rel="stylesheet" href="/vendor/css/style.css">
     <link rel="stylesheet" href="/vendor/css/dashboard.css">
 </head>
@@ -67,10 +67,10 @@
             </aside>
 
             <!-- main section -->
-            <main id="wJobList">
+            <main id="apply">
                 <!-- topbar -->
                 <section class="topbar">
-                    <h1>completed jobs</h1>
+                    <h1>job application</h1>
 
                     <a class="user" href="/worker/profile.html">
                         <img src="/vendor/media/user.jpg" alt="">
@@ -80,60 +80,25 @@
 
                 <!-- main content -->
                 <section class="main">
-                    <div class="card job">
-                        <div class="job_info">
-                            <h3 class="job_title">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, porro.
-                            </h3>
-                            <p class="job_cat">auto care</p>
+                    <form class="card application" action="javascript:void()" method="post">
+                        <div class="row">
+                            <div class="input col">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" value="Jimmy Polo" disabled>
+                            </div>
+                            <div class="input col">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" value="jimmypolo@email.com" disabled>
+                            </div>
                         </div>
-                        <a href="/worker/completed-job.html" class="button">Details</a>
-                    </div>
-                    <div class="card job">
-                        <div class="job_info">
-                            <h3 class="job_title">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, porro.
-                            </h3>
-                            <p class="job_cat">auto care</p>
+                        <div class="input">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="Type your application message here ..."
+                                required></textarea>
                         </div>
-                        <a href="/worker/completed-job.html" class="button">Details</a>
-                    </div>
-                    <div class="card job">
-                        <div class="job_info">
-                            <h3 class="job_title">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, porro.
-                            </h3>
-                            <p class="job_cat">auto care</p>
-                        </div>
-                        <a href="/worker/completed-job.html" class="button">Details</a>
-                    </div>
-                    <div class="card job">
-                        <div class="job_info">
-                            <h3 class="job_title">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, porro.
-                            </h3>
-                            <p class="job_cat">auto care</p>
-                        </div>
-                        <a href="/worker/completed-job.html" class="button">Details</a>
-                    </div>
-                    <div class="card job">
-                        <div class="job_info">
-                            <h3 class="job_title">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, porro.
-                            </h3>
-                            <p class="job_cat">auto care</p>
-                        </div>
-                        <a href="/worker/completed-job.html" class="button">Details</a>
-                    </div>
-                    <div class="card job">
-                        <div class="job_info">
-                            <h3 class="job_title">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, porro.
-                            </h3>
-                            <p class="job_cat">auto care</p>
-                        </div>
-                        <a href="/worker/completed-job.html" class="button">Details</a>
-                    </div>
+                        <button class="button" type="submit"><iconify-icon
+                                icon="icon-park-outline:telegram"></iconify-icon>Apply</button>
+                    </form>
                 </section>
             </main>
         </div>
